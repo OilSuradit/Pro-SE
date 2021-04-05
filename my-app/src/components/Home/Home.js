@@ -47,6 +47,7 @@ import { addSession } from '../../redux/actions';
 
 import Employees from '../Employees/Employees'
 import Sell from '../Sell/Sell'
+import So from '../Sell/So'
 import Buy from '../Buy/Buy'
 import Po from '../Buy/Po'
 
@@ -135,6 +136,7 @@ class Home extends React.Component {
                 <Switch>
                 <Route exact path={this.props.match.path+"/employees"} component={Employees} />
                 <Route exact path={this.props.match.path+"/sell"} component={Sell} />
+                <Route exact path={this.props.match.path+"/sell/so"} component={So} />
                 <Route exact path={this.props.match.path+"/buy"} component={Buy} />
                 <Route exact path={this.props.match.path+"/buy/po"} component={Po} />
                 </Switch>

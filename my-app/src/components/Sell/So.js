@@ -52,7 +52,7 @@ const formEmployeeSchema = Yup.object().shape({
   
   })
 
-class Po extends React.Component {
+class So extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -72,19 +72,19 @@ class Po extends React.Component {
                             marginBottom: 20,
                             width: '95%',
                             alignSelf: 'center'
-                        }}>ใบสั่งซื้อสินค้า</h1>
+                        }}>ใบสั่งแจ้งหนี้</h1>
                         <h4 style={{
                             marginTop: 20,
                             marginBottom: 20,
                             width: '95%',
                             alignSelf: 'center'
-                        }}>หมายเลขใบสั่งสินค้า : 100012  วันที่ : 3/15/2021 เวลา 16.00 น
+                        }}>หมายเลขใบแจ้งหนี้ : 100012  วันที่ : 3/15/2021 เวลา 16.00 น
                         </h4>
                         
 
 
                        
-                        <Input className="Search_Button" style={{ width: '95%' }} placeholder="บริษัท" />
+                        <Input className="Search_Button" style={{ width: '95%' }} placeholder="สาขา" />
                         <div className="Search_Button">
                             
                             <InputGroup style={{ width: 700 }}>
@@ -127,7 +127,7 @@ class Po extends React.Component {
                                 </tr> */}
                                 <tr>
                                     <th scope="row"></th>
-                                    <td style={{ size: '40'}}></td>
+                                    <td style={{ size: '40'}}> </td>
                                     <td></td>
                                     <td></td>
                                     <td></td>
@@ -195,4 +195,4 @@ class Po extends React.Component {
 }
 
 
-export default Po;
+export default So;

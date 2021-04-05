@@ -16,6 +16,13 @@ import {
 } from 'reactstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+import { 
+    Switch, 
+    Route, 
+    Link, 
+    NavLink, 
+    withRouter } from 'react-router-dom';
+
 import {
     ProSidebar,
     Menu,
@@ -57,7 +64,9 @@ class Sell extends React.Component {
                                 </InputGroupAddon>
                             </InputGroup>
                             <Button color="info" style={{ width: 100 }}>fillter</Button>
-                            <Button color="info" style={{ width: 180 }}>เพิ่มรายการขายสินค้า</Button>
+                            <Link to={this.props.match.url+"/so"}>
+                            <Button color="info" style={{ width: 175 }}>เพิ่มรายการขายสินค้า</Button>
+                            </Link>
                         </div>
 
                         <Table striped style={{ width: '95%', alignSelf: 'center', marginTop: 20 }}>
